@@ -1,6 +1,6 @@
 class ssh {
-  class { 'ssh::install':
+  class { 'ssh::install': }
+  class { 'ssh::service':
     require => Class['ssh::service']
   }
-  class { 'ssh::service': }
 }
